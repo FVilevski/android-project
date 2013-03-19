@@ -1,4 +1,4 @@
 android-project
 ===============
 
-Seminarska rabota vo koja se vkluceni i laboratoriskite vezbi
+Seminarska rabota (Memory Game) vo koja se vkluceni i laboratoriskite vezbi
