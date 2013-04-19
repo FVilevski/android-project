@@ -8,6 +8,9 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -29,6 +32,21 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="vilevski.android.games.vimemory.MainActivity" />
+        </activity>
+        <activity
+            android:name="vilevski.android.games.vimemory.HighScoresActivity"
+            android:label="@string/title_activity_high_scores" >
+        </activity>
+
+       <service 
+           android:enabled="true" 
+           android:name="vilevski.android.games.vimemory.classes.DownloadScoresService"
+           > 
+       </service>
+
+        <activity
+            android:name="vilevski.android.games.vimemory.PlayActivity"
+            android:label="@string/title_activity_play" >
         </activity>
     </application>
 

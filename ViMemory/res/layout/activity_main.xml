@@ -28,5 +28,15 @@
     	android:textColor="@color/LightBlue"
     	android:onClick="startNewGame"
     />
+    
+    <Button 
+    	android:layout_width="@dimen/btnWidth"
+    	android:layout_height="@dimen/btnHeight" 
+    	android:layout_marginLeft="18dp"
+    	android:layout_marginTop="190dp"
+    	android:text="@string/high_scores"
+    	android:textColor="@color/LightBlue"
+    	android:onClick="highScores"
+    />
 	
 </RelativeLayout>

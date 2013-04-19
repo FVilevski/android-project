@@ -1,4 +1,4 @@
-package vilevski.android.games.vimemory;
+package vilevski.android.games.vimemory.classes;
 
 public class LevelListRow {
 	private int imageID;

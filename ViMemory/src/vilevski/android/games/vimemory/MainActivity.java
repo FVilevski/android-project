@@ -11,11 +11,15 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
 	}
 
 	public void startNewGame(View view){
 		Intent intent = new Intent(this, NewGameActivity.class);
+		startActivity(intent);
+	}
+	
+	public void highScores(View view){
+		Intent intent = new Intent(this, HighScoresActivity.class);
 		startActivity(intent);
 	}
 

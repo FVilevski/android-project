@@ -3,9 +3,12 @@ package vilevski.android.games.vimemory;
 import java.util.ArrayList;
 import java.util.List;
 
+import vilevski.android.games.vimemory.classes.LevelListRow;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -58,12 +61,33 @@ public class NewGameActivity extends Activity implements OnItemClickListener{
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		Context context = getApplicationContext();
+		Intent intent = new Intent(this, PlayActivity.class);
+
+		Context context = getApplicationContext();		
 		CharSequence text = "You chose item: " + (position+1);
 		int duration = Toast.LENGTH_SHORT;
 
 		Toast toast = Toast.makeText(context, text, duration);
 		toast.show();
+
+		switch (position) {
+		case 0:
+			intent.addFlags(0); //Very easy level
+			break;
+		case 1:
+			intent.addFlags(1); //Easy level
+			break;	
+		case 2:
+			intent.addFlags(2); //Normal level
+			break;	
+		case 3:
+			intent.addFlags(3); //Hard level
+			break;
+		case 4:
+			intent.addFlags(4); //Very Hard level
+			break;
+		}
+		startActivity(intent);
 	}
 	
 	
