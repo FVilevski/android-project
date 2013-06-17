@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ВиМеморија</string>
+    <string name="action_settings">Подесувања</string>
+    <string name="main_menu">Главно мени</string>
+    <string name="new_game">Нова игра</string>
+    <string name="title_activity_new_game">Мени за Нова Игра</string>
+    <string name="second_activity">Тежина на играта</string>
+    <string name="custom_list_title">Мод на играта</string>
+    
+</resources>
